@@ -116,3 +116,4 @@ This is where you can give a hat tip to anyone who helped you out on this projec
 
 First Commit : Initializing the project
 Second Commit : Setting up the variables
+Third Commit : DOM Modifications

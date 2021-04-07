@@ -2,15 +2,15 @@
 
 # dependencies
 my-app/node_modules
-my-app/.sass-cache
-my-app/.pnp
+/.sass-cache
+/.pnp
 .pnp.js
 
 # testing
-my-app/coverage
+/coverage
 
 # production
-my-app/build
+/build
 
 # misc
 .DS_Store
