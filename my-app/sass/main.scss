@@ -1,0 +1,24 @@
+@import "compass";
+@import "compass/reset";
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+// base
+@import "./base/variables";
+@import "./base/basics";
+
+// themes
+@import "./themes/flex";
+@import "./themes/buttons";
+@import "./themes/icons";
+
+// layout
+@import "./layout/HomeComponent";
+
+
+// ----------------------------------------------------
+
+.app {
+    position: relative;
+}

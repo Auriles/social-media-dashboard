@@ -1,0 +1,69 @@
+@import "../base/variables";
+
+.home-component {
+    p {
+        font-family: $main_font;
+    }
+}
+
+.top-dashboard { // container
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+// .count {
+
+// }
+
+// .toggle-mode {
+
+// }
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.facebook-card {
+    display: flex;
+    flex-direction: column;
+    .facebook-name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .facebook-count {
+        display: flex;
+        flex-direction: column;
+    }
+    .facebook-period {
+        text-align: center;
+    }
+}
+
+.twitter-card {
+    display: flex;
+    flex-direction: column;
+    .twitter-name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .twitter-count {
+        display: flex;
+        flex-direction: column;
+    }
+    .twitter-period {
+        text-align: center;
+    }
+}
+
+// .instagram-card {
+
+// }
+
+// .youtube-card {
+
+// }
