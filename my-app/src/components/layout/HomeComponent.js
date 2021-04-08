@@ -80,6 +80,58 @@ class HomeComponent extends Component {
 
                 </div>
 
+                <div className="overview-top">
+
+                        {/* FACEBOOK CARD OVERVIEW 1 */}
+                    <div className="facebook-page-views">
+                        <div className="card-top">
+                            <p>Page Views</p>
+                            <p>Icon</p>
+                        </div>
+                        <div className="card-bottom">
+                            <p>87</p>
+                            <p>3%</p>
+                        </div>
+                    </div>
+
+                        {/* FACEBOOK CARD OVERVIEW 2 */}
+                    <div className="facebook-likes">
+                        <div className="card-top">
+                            <p>Likes</p>
+                            <p>Icon</p>
+                        </div>
+                        <div className="card-bottom">
+                            <p>52</p>
+                            <p>2%</p>
+                        </div>
+                    </div>
+
+                        {/* INSTAGRAM CARD OVERVIEW 1 */}
+                    <div className="instagram-likes">
+                        <div className="card-top">
+                            <p>Likes</p>
+                            <p>Icon</p>
+                        </div>
+                        <div className="card-bottom">
+                            <p>5462</p>
+                            <p>2257%</p>
+                        </div>
+                    </div>
+
+                    {/* INSTAGRAM CARD OVERVIEW 2 */}
+                    <div className="instagram-profile-views">
+                        <div className="card-top">
+                            <p>Profile Views</p>
+                            <p>Icon</p>
+                        </div>
+                        <div className="card-bottom">
+                            <p>52k</p>
+                            <p>1375%</p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         );
     }

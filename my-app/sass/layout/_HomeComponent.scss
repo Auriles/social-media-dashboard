@@ -6,6 +6,8 @@
     }
 }
 
+// --------------- TOP DASHBOARD ---------------
+
 .top-dashboard { // container
     display: flex;
     flex-direction: row;
@@ -92,4 +94,24 @@
     .youtube-period {
         text-align: center;
     }
+}
+
+// --------------- OVERVIEW ---------------
+
+.overview-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
