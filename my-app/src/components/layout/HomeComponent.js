@@ -48,23 +48,34 @@ class HomeComponent extends Component {
                         </div>
                     </div>
 
-                        {/* TWITTER CARD */}
+                        {/* INSTAGRAM CARD */}
                     <div className="instagram-card">
-                        <div className="twitter-name">
+                        <div className="instagram-name">
                             <p>logo</p>
                             <p>@nathanf</p>
                         </div>
-                        <div className="twitter-count">
-                            <p>1044</p>
+                        <div className="instagram-count">
+                            <p>11k</p>
                             <p>Followers</p>
                         </div>
-                        <div className="twitter-period">
-                            <p>99 Tolkkkkkkkkkday</p>
+                        <div className="instagram-period">
+                            <p>1099 Today</p>
                         </div>
                     </div>
 
+                        {/* YOUTUBE CARD */}
                     <div className="youtube-card">
-                        <p>Youtube</p>
+                        <div className="youtube-name">
+                            <p>logo</p>
+                            <p>Nathan F.</p>
+                        </div>
+                        <div className="youtube-count">
+                            <p>8239</p>
+                            <p>Subscribers</p>
+                        </div>
+                        <div className="youtube-period">
+                            <p>144 Today</p>
+                        </div>
                     </div>
 
                 </div>

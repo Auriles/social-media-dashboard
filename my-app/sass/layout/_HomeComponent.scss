@@ -60,10 +60,36 @@
     }
 }
 
-// .instagram-card {
+.instagram-card {
+    display: flex;
+    flex-direction: column;
+    .instagram-name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .instagram-count {
+        display: flex;
+        flex-direction: column;
+    }
+    .instagram-period {
+        text-align: center;
+    }
+}
 
-// }
-
-// .youtube-card {
-
-// }
+.youtube-card {
+    display: flex;
+    flex-direction: column;
+    .youtube-name {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .youtube-count {
+        display: flex;
+        flex-direction: column;
+    }
+    .youtube-period {
+        text-align: center;
+    }
+}

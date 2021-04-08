@@ -59,24 +59,6 @@ The designs were created to the following widths:
 
 ### Text
 
-
-
-                
-                Followers
-                99 Today
-
-                @realnathanf
-                11k
-                Followers
-                1099 Today
-
-                Nathan F.
-                8239
-                Subscribers
-                144 Today
-
-
-
                 Overview - Today
 
                 Page Views
