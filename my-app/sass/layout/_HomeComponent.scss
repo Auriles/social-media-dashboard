@@ -3,6 +3,7 @@
 .home-component {
     p {
         font-family: $main_font;
+        color: white;
     }
 }
 
@@ -111,6 +112,12 @@
 }
 
 .card-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.overview-bottom {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

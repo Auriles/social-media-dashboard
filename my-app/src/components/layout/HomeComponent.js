@@ -132,6 +132,58 @@ class HomeComponent extends Component {
 
                 </div>
 
+                <div className="overview-bottom">
+
+                    {/* TWITTER CARD OVERVIEW 1 */}
+                    <div className="twitter-retweets">
+                        <div className="card-top">
+                            <p>Retweets</p>
+                            <p>Icon</p>
+                        </div>
+                        <div className="card-bottom">
+                            <p>117</p>
+                            <p>303%</p>
+                        </div>
+                    </div>
+
+                    {/* TWITTER CARD OVERVIEW 2 */}
+                    <div className="twitter-likes">
+                        <div className="card-top">
+                            <p>Likes</p>
+                            <p>Icon</p>
+                        </div>
+                        <div className="card-bottom">
+                            <p>507</p>
+                            <p>553%</p>
+                        </div>
+                    </div>
+
+                    {/* YOUTUBE CARD OVERVIEW 1 */}
+                    <div className="youtube-likes">
+                        <div className="card-top">
+                            <p>Likes</p>
+                            <p>Icon</p>
+                        </div>
+                        <div className="card-bottom">
+                            <p>107</p>
+                            <p>19%</p>
+                        </div>
+                    </div>
+
+                    {/* YOUTUBE CARD OVERVIEW 2 */}
+                    <div className="youtube-total-views">
+                        <div className="card-top">
+                            <p>Total Views</p>
+                            <p>Icon</p>
+                        </div>
+                        <div className="card-bottom">
+                            <p>1407</p>
+                            <p>12%</p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
         );
     }
