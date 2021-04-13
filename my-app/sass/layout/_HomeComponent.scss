@@ -1,9 +1,17 @@
 @import "../base/variables";
+@import "../base/basics";
 
 .home-component {
+    // background-color: blue;
+    // height: 100vh;
+    // width: auto;
+    padding-left: 162px;
+    padding-right: 162px;
+    padding-top: 32px;
+
     p {
         font-family: $main_font;
-        color: white;
+        // color: $DarkMainText;
     }
 }
 
@@ -13,15 +21,69 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    // Count
+    .count p:nth-child(1) {
+        font-weight: bold;
+        font-size: 28px;
+    }
+    .count p:nth-child(2) {
+        font-weight: bold;
+        font-size: 14px;
+        color: $DarkSecondText;
+    }
+
+    // Toggle Mode
+    .toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        transition: background 0.2s linear;
+        p {
+            font-weight: bold;
+            font-size: 14px;
+            color: $DarkSecondText;
+        }
+        .checkbox {
+            opacity: 0;
+            position: absolute;
+        }
+        .label {
+            width: 50px;
+            height: 26px;
+            background-color: #111;
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 50px;
+            padding: 5px;
+            transform: scale(1.5);
+        }
+        .ball {
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            // top: 2px;
+            // left: 2px;
+            height: 22px;
+            width: 22px;
+            transition: transform 0.2s linear;
+        }
+        .checkbox:checked+.label .ball {
+            transform: translateX(24px);
+        }
+        .fa-moon {
+            color: #f1c40f;
+        }
+        .fa-sun {
+            color: #f39c12;
+        }
+    }
 }
 
-// .count {
 
-// }
-
-// .toggle-mode {
-
-// }
 
 .social-media {
     display: flex;

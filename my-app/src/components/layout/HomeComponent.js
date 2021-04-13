@@ -1,24 +1,49 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { lightTheme, darkTheme } from '../themes/theme';
+import { GlobalStyles } from '../../global';
 
-class HomeComponent extends Component {
-    render() {
-        return (
+// The function that toggles between themes
+function HomeComponent() {
+    const [theme, setTheme] = useState('light');
+    const toggleTheme = () => {
+        if (theme === 'light') {
+            setTheme('dark');
+        } else {
+            setTheme('light');
+        }
+    }
+
+    // Return the layout based on the current theme
+    return (
+        <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
             <div className="home-component">
+                <GlobalStyles />
+                // Pass the toggle functionality to the button
+                <button onClick={toggleTheme}>Toggle theme</button>
+                <h1>It's a light theme!</h1>
 
                 <div className="top-dashboard">
                     <div className="count">
                         <p>Social Media Dashboard</p>
                         <p>Total Followers: 23,004</p>
                     </div>
-
-                    <div className="toggle-mode">
+                    <div className="toggle">
                         <p>Dark Mode</p>
+                        {/* <div>
+                                <input type="checkbox" id="checkbox" className="checkbox" />
+                                <label for="checkbox" className="label">
+                                    <i className="fas fa-moon"></i>
+                                    <i className="fas fa-sun"></i>
+                                    <div className="ball"></div>
+                                </label>
+                            </div> */}
                     </div>
                 </div>
 
                 <div className="social-media">
 
-                        {/* FACEBOOK CARD */}
+                    {/* FACEBOOK CARD */}
                     <div className="facebook-card">
                         <div className="facebook-name">
                             <p>logo</p>
@@ -33,7 +58,7 @@ class HomeComponent extends Component {
                         </div>
                     </div>
 
-                        {/* TWITTER CARD */}
+                    {/* TWITTER CARD */}
                     <div className="twitter-card">
                         <div className="twitter-name">
                             <p>logo</p>
@@ -48,7 +73,7 @@ class HomeComponent extends Component {
                         </div>
                     </div>
 
-                        {/* INSTAGRAM CARD */}
+                    {/* INSTAGRAM CARD */}
                     <div className="instagram-card">
                         <div className="instagram-name">
                             <p>logo</p>
@@ -63,7 +88,7 @@ class HomeComponent extends Component {
                         </div>
                     </div>
 
-                        {/* YOUTUBE CARD */}
+                    {/* YOUTUBE CARD */}
                     <div className="youtube-card">
                         <div className="youtube-name">
                             <p>logo</p>
@@ -82,7 +107,7 @@ class HomeComponent extends Component {
 
                 <div className="overview-top">
 
-                        {/* FACEBOOK CARD OVERVIEW 1 */}
+                    {/* FACEBOOK CARD OVERVIEW 1 */}
                     <div className="facebook-page-views">
                         <div className="card-top">
                             <p>Page Views</p>
@@ -94,7 +119,7 @@ class HomeComponent extends Component {
                         </div>
                     </div>
 
-                        {/* FACEBOOK CARD OVERVIEW 2 */}
+                    {/* FACEBOOK CARD OVERVIEW 2 */}
                     <div className="facebook-likes">
                         <div className="card-top">
                             <p>Likes</p>
@@ -106,7 +131,7 @@ class HomeComponent extends Component {
                         </div>
                     </div>
 
-                        {/* INSTAGRAM CARD OVERVIEW 1 */}
+                    {/* INSTAGRAM CARD OVERVIEW 1 */}
                     <div className="instagram-likes">
                         <div className="card-top">
                             <p>Likes</p>
@@ -185,8 +210,8 @@ class HomeComponent extends Component {
                 </div>
 
             </div>
-        );
-    }
+        </ThemeProvider>
+    );
 }
 
 export default HomeComponent;
