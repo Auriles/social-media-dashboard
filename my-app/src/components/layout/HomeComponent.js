@@ -1,6 +1,7 @@
 import React, { Component, useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from '../themes/theme';
+import Toggle from '../modules/toggle';
 import { GlobalStyles } from '../../global';
 
 // The function that toggles between themes
@@ -19,9 +20,6 @@ function HomeComponent() {
         <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
             <div className="home-component">
                 <GlobalStyles />
-                // Pass the toggle functionality to the button
-                <button onClick={toggleTheme}>Toggle theme</button>
-                <h1>It's a light theme!</h1>
 
                 <div className="top-dashboard">
                     <div className="count">
@@ -29,15 +27,8 @@ function HomeComponent() {
                         <p>Total Followers: 23,004</p>
                     </div>
                     <div className="toggle">
-                        <p>Dark Mode</p>
-                        {/* <div>
-                                <input type="checkbox" id="checkbox" className="checkbox" />
-                                <label for="checkbox" className="label">
-                                    <i className="fas fa-moon"></i>
-                                    <i className="fas fa-sun"></i>
-                                    <div className="ball"></div>
-                                </label>
-                            </div> */}
+                        <Toggle theme={theme} toggleTheme={toggleTheme} />
+                        <p>It's a {theme === 'light' ? 'light theme' : 'dark theme'}!</p>
                     </div>
                 </div>
 

@@ -1,49 +1,50 @@
-import React, { Component } from 'react';
-import styled, { css } from 'styled-components';
+// Toggle.js
+import React from 'react'
+import { func, string } from 'prop-types';
+import styled from 'styled-components';
 
-const Button = styled.button`
-    background: transparent;
-    border-radius: 3px;
-    border: 2px solid palevioletred;
-    color: palevioletred;
-    margin: 0 1em;
-    padding: 0.25em 1em;
+import MoonIcon from '../../icons/MoonIcon';
+import SunIcon from '../../icons/SunIcon';
 
-    ${props => props.primary && css`
-    background: palevioletred;
-    color: white;
-  `}
+// import { ReactComponent as MoonIcon } from '../../icons/moon.svg';
+// import { ReactComponent as SunIcon } from '../../icons/sun.svg';
+
+// Toggle.styled.js
+const ToggleContainer = styled.button`
+  background: ${({ theme }) => theme.gradient};
+  border: 2px solid ${({ theme }) => theme.toggleBorder};
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  font-size: 0.5rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0.5rem;
+  position: relative;
+  width: 8rem;
+  height: 4rem;
+
+    .svg {
+        height: auto;
+        width: 2.5rem;
+        transition: all 0.3s linear;
+    }
 `;
 
-const Container = styled.div`
-  text-align: center;
-`
+const Toggle = ({ theme, toggleTheme }) => {
+    const isLight = theme === 'light';
+    return (
+        <ToggleContainer onClick={toggleTheme}>
+            <SunIcon />
+            <MoonIcon />
+        </ToggleContainer>
+    );
+};
 
-const body = styled.body`
-    background: dark;
-`
-
-class toggle extends Component {
-
-    state = {
-        on: false,
-    }
-
-    toggle = () => {
-        this.setState({
-            on: !this.state.on
-        })
-    }
-
-    render() {
-        return (
-            <Container>
-                {this.state.on && this.props.children}
-                <Button onClick={this.toggle}>Show/Hide</Button>
-                <Button primary onClick={this.toggle}>Show/Hide</Button>
-            </Container>
-        );
-    }
+Toggle.propTypes = {
+    theme: string.isRequired,
+    toggleTheme: func.isRequired,
 }
 
-export default toggle;
+export default Toggle;

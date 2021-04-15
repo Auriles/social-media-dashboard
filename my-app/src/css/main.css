@@ -106,29 +106,29 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-right: 162px;
   padding-top: 32px;
 }
-/* line 12, ../../sass/layout/_HomeComponent.scss */
+/* line 9, ../../sass/layout/_HomeComponent.scss */
 .home-component p {
   font-family: "Inter", sans-serif;
 }
 
-/* line 20, ../../sass/layout/_HomeComponent.scss */
+/* line 17, ../../sass/layout/_HomeComponent.scss */
 .top-dashboard {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 26, ../../sass/layout/_HomeComponent.scss */
+/* line 23, ../../sass/layout/_HomeComponent.scss */
 .top-dashboard .count p:nth-child(1) {
   font-weight: bold;
   font-size: 28px;
 }
-/* line 30, ../../sass/layout/_HomeComponent.scss */
+/* line 27, ../../sass/layout/_HomeComponent.scss */
 .top-dashboard .count p:nth-child(2) {
   font-weight: bold;
   font-size: 14px;
   color: #8b97c6;
 }
-/* line 37, ../../sass/layout/_HomeComponent.scss */
+/* line 34, ../../sass/layout/_HomeComponent.scss */
 .top-dashboard .toggle {
   display: flex;
   justify-content: center;
@@ -136,172 +136,128 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin: 0;
   transition: background 0.2s linear;
 }
-/* line 43, ../../sass/layout/_HomeComponent.scss */
+/* line 40, ../../sass/layout/_HomeComponent.scss */
 .top-dashboard .toggle p {
   font-weight: bold;
   font-size: 14px;
   color: #8b97c6;
 }
-/* line 48, ../../sass/layout/_HomeComponent.scss */
-.top-dashboard .toggle .checkbox {
-  opacity: 0;
-  position: absolute;
-}
-/* line 52, ../../sass/layout/_HomeComponent.scss */
-.top-dashboard .toggle .label {
-  width: 50px;
-  height: 26px;
-  background-color: #111;
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: space-between;
-  border-radius: 50px;
-  padding: 5px;
-  transform: scale(1.5);
-}
-/* line 64, ../../sass/layout/_HomeComponent.scss */
-.top-dashboard .toggle .ball {
-  background-color: #fff;
-  border-radius: 50%;
-  position: absolute;
-  height: 22px;
-  width: 22px;
-  transition: transform 0.2s linear;
-}
-/* line 74, ../../sass/layout/_HomeComponent.scss */
-.top-dashboard .toggle .checkbox:checked + .label .ball {
-  transform: translateX(24px);
-}
-/* line 77, ../../sass/layout/_HomeComponent.scss */
-.top-dashboard .toggle .fa-moon {
-  color: #f1c40f;
-}
-/* line 80, ../../sass/layout/_HomeComponent.scss */
-.top-dashboard .toggle .fa-sun {
-  color: #f39c12;
-}
 
-/* line 88, ../../sass/layout/_HomeComponent.scss */
+/* line 49, ../../sass/layout/_HomeComponent.scss */
 .social-media {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* line 94, ../../sass/layout/_HomeComponent.scss */
+/* line 55, ../../sass/layout/_HomeComponent.scss */
 .facebook-card {
   display: flex;
   flex-direction: column;
 }
-/* line 97, ../../sass/layout/_HomeComponent.scss */
+/* line 58, ../../sass/layout/_HomeComponent.scss */
 .facebook-card .facebook-name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 102, ../../sass/layout/_HomeComponent.scss */
+/* line 63, ../../sass/layout/_HomeComponent.scss */
 .facebook-card .facebook-count {
   display: flex;
   flex-direction: column;
 }
-/* line 106, ../../sass/layout/_HomeComponent.scss */
+/* line 67, ../../sass/layout/_HomeComponent.scss */
 .facebook-card .facebook-period {
   text-align: center;
 }
 
-/* line 111, ../../sass/layout/_HomeComponent.scss */
+/* line 72, ../../sass/layout/_HomeComponent.scss */
 .twitter-card {
   display: flex;
   flex-direction: column;
 }
-/* line 114, ../../sass/layout/_HomeComponent.scss */
+/* line 75, ../../sass/layout/_HomeComponent.scss */
 .twitter-card .twitter-name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 119, ../../sass/layout/_HomeComponent.scss */
+/* line 80, ../../sass/layout/_HomeComponent.scss */
 .twitter-card .twitter-count {
   display: flex;
   flex-direction: column;
 }
-/* line 123, ../../sass/layout/_HomeComponent.scss */
+/* line 84, ../../sass/layout/_HomeComponent.scss */
 .twitter-card .twitter-period {
   text-align: center;
 }
 
-/* line 128, ../../sass/layout/_HomeComponent.scss */
+/* line 89, ../../sass/layout/_HomeComponent.scss */
 .instagram-card {
   display: flex;
   flex-direction: column;
 }
-/* line 131, ../../sass/layout/_HomeComponent.scss */
+/* line 92, ../../sass/layout/_HomeComponent.scss */
 .instagram-card .instagram-name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 136, ../../sass/layout/_HomeComponent.scss */
+/* line 97, ../../sass/layout/_HomeComponent.scss */
 .instagram-card .instagram-count {
   display: flex;
   flex-direction: column;
 }
-/* line 140, ../../sass/layout/_HomeComponent.scss */
+/* line 101, ../../sass/layout/_HomeComponent.scss */
 .instagram-card .instagram-period {
   text-align: center;
 }
 
-/* line 145, ../../sass/layout/_HomeComponent.scss */
+/* line 106, ../../sass/layout/_HomeComponent.scss */
 .youtube-card {
   display: flex;
   flex-direction: column;
 }
-/* line 148, ../../sass/layout/_HomeComponent.scss */
+/* line 109, ../../sass/layout/_HomeComponent.scss */
 .youtube-card .youtube-name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-/* line 153, ../../sass/layout/_HomeComponent.scss */
+/* line 114, ../../sass/layout/_HomeComponent.scss */
 .youtube-card .youtube-count {
   display: flex;
   flex-direction: column;
 }
-/* line 157, ../../sass/layout/_HomeComponent.scss */
+/* line 118, ../../sass/layout/_HomeComponent.scss */
 .youtube-card .youtube-period {
   text-align: center;
 }
 
-/* line 164, ../../sass/layout/_HomeComponent.scss */
+/* line 125, ../../sass/layout/_HomeComponent.scss */
 .overview-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* line 170, ../../sass/layout/_HomeComponent.scss */
+/* line 131, ../../sass/layout/_HomeComponent.scss */
 .card-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* line 176, ../../sass/layout/_HomeComponent.scss */
+/* line 137, ../../sass/layout/_HomeComponent.scss */
 .card-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* line 182, ../../sass/layout/_HomeComponent.scss */
+/* line 143, ../../sass/layout/_HomeComponent.scss */
 .overview-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-/* line 22, ../../sass/main.scss */
-.app {
-  position: relative;
 }
