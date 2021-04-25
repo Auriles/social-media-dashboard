@@ -8,7 +8,6 @@
 
     p {
         font-family: $main_font;
-        // color: $DarkMainText;
     }
 }
 
@@ -45,16 +44,27 @@
     }
 }
 
-
 .social-media {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.facebook-card {
+.card {
     display: flex;
     flex-direction: column;
+    width: 255px;
+    height: 216px;
+    background-color: $DarkCard;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+// --------------- FACEBOOK ---------------
+
+.facebook-card {
+    border-top: 0.25rem solid $facebbook_color;
     .facebook-name {
         display: flex;
         flex-direction: row;
@@ -69,9 +79,10 @@
     }
 }
 
+// --------------- TWITTER ---------------
+
 .twitter-card {
-    display: flex;
-    flex-direction: column;
+    border-top: 0.25rem solid $twitter_color;
     .twitter-name {
         display: flex;
         flex-direction: row;
@@ -86,9 +97,10 @@
     }
 }
 
+// --------------- INSTAGRAM ---------------
+
 .instagram-card {
-    display: flex;
-    flex-direction: column;
+    border-top: 0.25rem solid $instagram_color;
     .instagram-name {
         display: flex;
         flex-direction: row;

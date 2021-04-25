@@ -27,15 +27,14 @@ function HomeComponent() {
                         <p>Total Followers: 23,004</p>
                     </div>
                     <div className="toggle">
+                        <p> {theme === 'light' ? 'Light Theme' : 'Dark Theme'} </p>
                         <Toggle theme={theme} toggleTheme={toggleTheme} />
-                        <p>It's a {theme === 'light' ? 'light theme' : 'dark theme'}!</p>
                     </div>
                 </div>
 
                 <div className="social-media">
-
                     {/* FACEBOOK CARD */}
-                    <div className="facebook-card">
+                    <div className="card facebook-card">
                         <div className="facebook-name">
                             <p>logo</p>
                             <p>@nathanf</p>
@@ -50,7 +49,7 @@ function HomeComponent() {
                     </div>
 
                     {/* TWITTER CARD */}
-                    <div className="twitter-card">
+                    <div className="card twitter-card">
                         <div className="twitter-name">
                             <p>logo</p>
                             <p>@nathanf</p>
@@ -65,7 +64,7 @@ function HomeComponent() {
                     </div>
 
                     {/* INSTAGRAM CARD */}
-                    <div className="instagram-card">
+                    <div className="card instagram-card">
                         <div className="instagram-name">
                             <p>logo</p>
                             <p>@nathanf</p>
@@ -80,7 +79,7 @@ function HomeComponent() {
                     </div>
 
                     {/* YOUTUBE CARD */}
-                    <div className="youtube-card">
+                    <div className="card youtube-card">
                         <div className="youtube-name">
                             <p>logo</p>
                             <p>Nathan F.</p>
