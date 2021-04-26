@@ -65,6 +65,9 @@ function HomeComponent() {
 
                     {/* INSTAGRAM CARD */}
                     <div className="card instagram-card">
+                        <div className="test">
+
+                        </div>
                         <div className="instagram-name">
                             <p>logo</p>
                             <p>@nathanf</p>
