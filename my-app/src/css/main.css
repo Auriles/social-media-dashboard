@@ -141,16 +141,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: bold;
   font-size: 14px;
   color: #8b97c6;
+  padding-right: 10px;
 }
 
-/* line 47, ../../sass/layout/_HomeComponent.scss */
+/* line 48, ../../sass/layout/_HomeComponent.scss */
 .social-media {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* line 53, ../../sass/layout/_HomeComponent.scss */
+/* line 54, ../../sass/layout/_HomeComponent.scss */
 .card {
   display: flex;
   flex-direction: column;
@@ -161,121 +162,188 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-top: 20px;
   border-radius: 5px;
 }
-
-/* line 67, ../../sass/layout/_HomeComponent.scss */
-.facebook-card {
-  border-top: 0.25rem solid #198ff5;
+/* line 63, ../../sass/layout/_HomeComponent.scss */
+.card i {
+  font-size: 20px;
+  color: #198ff5;
 }
+
 /* line 69, ../../sass/layout/_HomeComponent.scss */
-.facebook-card .facebook-name {
+.name {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
-/* line 74, ../../sass/layout/_HomeComponent.scss */
-.facebook-card .facebook-count {
+/* line 75, ../../sass/layout/_HomeComponent.scss */
+.name p {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* line 81, ../../sass/layout/_HomeComponent.scss */
+.followers {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
 }
-/* line 78, ../../sass/layout/_HomeComponent.scss */
-.facebook-card .facebook-period {
-  text-align: center;
-}
-
-/* line 85, ../../sass/layout/_HomeComponent.scss */
-.twitter-card {
-  border-top: 0.25rem solid #1ca0f2;
-}
-/* line 87, ../../sass/layout/_HomeComponent.scss */
-.twitter-card .twitter-name {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+/* line 86, ../../sass/layout/_HomeComponent.scss */
+.followers p:first-child {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 /* line 92, ../../sass/layout/_HomeComponent.scss */
-.twitter-card .twitter-count {
-  display: flex;
-  flex-direction: column;
+.followers p:nth-child(2) {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
 }
-/* line 96, ../../sass/layout/_HomeComponent.scss */
-.twitter-card .twitter-period {
+
+/* line 99, ../../sass/layout/_HomeComponent.scss */
+.period {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  color: #1db489;
+}
+/* line 105, ../../sass/layout/_HomeComponent.scss */
+.period p {
+  font-size: 16px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+/* line 112, ../../sass/layout/_HomeComponent.scss */
+.period i {
+  color: #1db489;
+  margin-right: 5px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 123, ../../sass/layout/_HomeComponent.scss */
+.facebook-card {
+  border-top: 0.25rem solid #198ff5;
   text-align: center;
 }
 
-/* line 103, ../../sass/layout/_HomeComponent.scss */
+/* line 128, ../../sass/layout/_HomeComponent.scss */
+.twitter-card {
+  border-top: 0.25rem solid #1ca0f2;
+  text-align: center;
+}
+
+/* line 133, ../../sass/layout/_HomeComponent.scss */
+.youtube-card {
+  border-top: 0.25rem solid #c4032a;
+  text-align: center;
+}
+/* line 136, ../../sass/layout/_HomeComponent.scss */
+.youtube-card .reverse {
+  color: #dc414c;
+}
+/* line 137, ../../sass/layout/_HomeComponent.scss */
+.youtube-card .reverse i {
+  color: #dc414c;
+}
+
+/* line 146, ../../sass/layout/_HomeComponent.scss */
 .instagram-card {
   background-image: linear-gradient(to right, #fdc468, #df4996);
   position: relative;
+  text-align: center;
 }
-/* line 106, ../../sass/layout/_HomeComponent.scss */
-.instagram-card .test {
+/* line 150, ../../sass/layout/_HomeComponent.scss */
+.instagram-card .instagram-border {
   position: absolute;
   width: 100%;
   height: 98%;
   top: 2%;
   left: 0%;
-  opacity: 0.7;
   background: #252a41;
-  border-radius: 5px;
 }
-/* line 116, ../../sass/layout/_HomeComponent.scss */
+/* line 158, ../../sass/layout/_HomeComponent.scss */
 .instagram-card .instagram-name {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 15px;
 }
-/* line 121, ../../sass/layout/_HomeComponent.scss */
-.instagram-card .instagram-count {
+/* line 165, ../../sass/layout/_HomeComponent.scss */
+.instagram-card .instagram-name p {
+  font-weight: bold;
+  margin-left: 10px;
+}
+/* line 170, ../../sass/layout/_HomeComponent.scss */
+.instagram-card .instagram-followers {
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
 }
-/* line 125, ../../sass/layout/_HomeComponent.scss */
+/* line 175, ../../sass/layout/_HomeComponent.scss */
+.instagram-card .instagram-followers p:first-child {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* line 180, ../../sass/layout/_HomeComponent.scss */
+.instagram-card .instagram-followers p:nth-child(2) {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+/* line 186, ../../sass/layout/_HomeComponent.scss */
 .instagram-card .instagram-period {
   text-align: center;
-}
-
-/* line 130, ../../sass/layout/_HomeComponent.scss */
-.youtube-card {
-  border-top: 0.25rem solid #c4032a;
-}
-/* line 132, ../../sass/layout/_HomeComponent.scss */
-.youtube-card .youtube-name {
+  position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  margin: 0 auto;
+  color: #1db489;
 }
-/* line 137, ../../sass/layout/_HomeComponent.scss */
-.youtube-card .youtube-count {
-  display: flex;
-  flex-direction: column;
+/* line 195, ../../sass/layout/_HomeComponent.scss */
+.instagram-card .instagram-period p {
+  font-size: 16px;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
 }
-/* line 141, ../../sass/layout/_HomeComponent.scss */
-.youtube-card .youtube-period {
-  text-align: center;
+/* line 202, ../../sass/layout/_HomeComponent.scss */
+.instagram-card .instagram-period i {
+  color: #1db489;
+  margin-right: 5px;
+  font-size: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
-/* line 148, ../../sass/layout/_HomeComponent.scss */
+/* line 214, ../../sass/layout/_HomeComponent.scss */
 .overview-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* line 154, ../../sass/layout/_HomeComponent.scss */
+/* line 220, ../../sass/layout/_HomeComponent.scss */
 .card-top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* line 160, ../../sass/layout/_HomeComponent.scss */
+/* line 226, ../../sass/layout/_HomeComponent.scss */
 .card-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-/* line 166, ../../sass/layout/_HomeComponent.scss */
+/* line 232, ../../sass/layout/_HomeComponent.scss */
 .overview-bottom {
   display: flex;
   flex-direction: row;

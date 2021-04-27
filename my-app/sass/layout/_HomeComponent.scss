@@ -40,6 +40,7 @@
             font-weight: bold;
             font-size: 14px;
             color: $DarkSecondText;
+            padding-right: 10px;
         }
     }
 }
@@ -59,42 +60,84 @@
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
-    // position: relative;
+    i {
+        font-size: 20px;
+        color: $facebbook_color;
+    }
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-bottom: 15px;
+
+    p {
+        font-weight: bold;
+        margin-left: 10px;
+    }
+}
+
+.followers {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    p:first-child {
+        font-size: 56px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    p:nth-child(2) {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+}
+
+.period {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    color: $main_color;
+
+    p {
+        font-size: 16px;
+        font-weight: bold;
+        align-items: center;
+        justify-content: center;
+    }
+
+    i {
+        color: $main_color;
+        margin-right: 5px;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 // --------------- FACEBOOK ---------------
 
 .facebook-card {
     border-top: 0.25rem solid $facebbook_color;
-    .facebook-name {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .facebook-count {
-        display: flex;
-        flex-direction: column;
-    }
-    .facebook-period {
-        text-align: center;
-    }
+    text-align: center;
 }
-
-// --------------- TWITTER ---------------
 
 .twitter-card {
     border-top: 0.25rem solid $twitter_color;
-    .twitter-name {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .twitter-count {
-        display: flex;
-        flex-direction: column;
-    }
-    .twitter-period {
-        text-align: center;
+    text-align: center;
+}
+
+.youtube-card {
+    border-top: 0.25rem solid $youtube_color;
+    text-align: center;
+    .reverse {
+        i {
+            color: $second_color;
+        }
+        color: $second_color;
     }
 }
 
@@ -103,43 +146,66 @@
 .instagram-card {
     background-image: linear-gradient(to right,#FDC468, #DF4996);
     position: relative;
-    .test {
+    text-align: center;
+    .instagram-border {
         position: absolute;
         width: 100%;
         height: 98%;
         top: 2%;
         left: 0%;
-        opacity: 0.7;
         background: $DarkCard;
-        border-radius: 5px;
     }
     .instagram-name {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        position: relative;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        p {
+            font-weight: bold;
+            margin-left: 10px;
+        }
     }
-    .instagram-count {
+    .instagram-followers {
         display: flex;
         flex-direction: column;
+        position: relative;
+        margin-bottom: 20px;
+        p:first-child {
+            font-size: 56px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        p:nth-child(2) {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
     }
     .instagram-period {
         text-align: center;
-    }
-}
+        position: relative;
 
-.youtube-card {
-    border-top: 0.25rem solid $youtube_color;
-    .youtube-name {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-    }
-    .youtube-count {
-        display: flex;
-        flex-direction: column;
-    }
-    .youtube-period {
-        text-align: center;
+        margin: 0 auto;
+        color: $main_color;
+
+        p {
+            font-size: 16px;
+            font-weight: bold;
+            align-items: center;
+            justify-content: center;
+        }
+
+        i {
+            color: $main_color;
+            margin-right: 5px;
+            font-size: 16px;
+            align-items: center;
+            justify-content: center;
+        }
     }
 }
 

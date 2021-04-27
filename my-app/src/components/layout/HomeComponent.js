@@ -35,63 +35,65 @@ function HomeComponent() {
                 <div className="social-media">
                     {/* FACEBOOK CARD */}
                     <div className="card facebook-card">
-                        <div className="facebook-name">
-                            <p>logo</p>
+                        <div className="name">
+                            <i class="fab fa-facebook-square"></i>
                             <p>@nathanf</p>
                         </div>
-                        <div className="facebook-count">
+                        <div className="followers">
                             <p>1987</p>
                             <p>Followers</p>
                         </div>
-                        <div className="facebook-period">
+                        <div className="period">
+                            <i class="fas fa-sort-up"></i>
                             <p>12 Today</p>
                         </div>
                     </div>
 
                     {/* TWITTER CARD */}
                     <div className="card twitter-card">
-                        <div className="twitter-name">
-                            <p>logo</p>
+                        <div className="name">
+                            <i class="fab fa-twitter"></i>
                             <p>@nathanf</p>
                         </div>
-                        <div className="twitter-count">
+                        <div className="followers">
                             <p>1044</p>
                             <p>Followers</p>
                         </div>
-                        <div className="twitter-period">
+                        <div className="period">
+                            <i class="fas fa-sort-up"></i>
                             <p>99 Today</p>
                         </div>
                     </div>
 
                     {/* INSTAGRAM CARD */}
                     <div className="card instagram-card">
-                        <div className="test">
-
-                        </div>
+                        <div className="instagram-border"></div>
                         <div className="instagram-name">
-                            <p>logo</p>
+                            <p><i class="fab fa-instagram"></i></p>
                             <p>@nathanf</p>
                         </div>
-                        <div className="instagram-count">
+                        <div className="instagram-followers">
                             <p>11k</p>
                             <p>Followers</p>
                         </div>
                         <div className="instagram-period">
+                            <i class="fas fa-sort-up"></i>
                             <p>1099 Today</p>
                         </div>
                     </div>
 
                     {/* YOUTUBE CARD */}
                     <div className="card youtube-card">
-                        <div className="youtube-name">
-                            <p>logo</p>
+                        <div className="name">
+                            <p><i class="fab fa-youtube"></i></p>
                             <p>Nathan F.</p>
                         </div>
-                        <div className="youtube-count">
+                        <div className="followers">
                             <p>8239</p>
                             <p>Subscribers</p>
                         </div>
-                        <div className="youtube-period">
+                        <div className="period reverse">
+                            <i class="fas fa-sort-down"></i>
                             <p>144 Today</p>
                         </div>
                     </div>

@@ -13,6 +13,7 @@ import SunIcon from '../../icons/SunIcon';
 const ToggleContainer = styled.button`
   background: ${({ theme }) => theme.gradient};
   border: 2px solid ${({ theme }) => theme.toggleBorder};
+  background-color: ${({ theme }) => theme.card};
   border-radius: 30px;
   cursor: pointer;
   display: flex;
